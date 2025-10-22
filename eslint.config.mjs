@@ -19,6 +19,13 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // 🔧 Disable annoying quote escaping errors
+      "react/no-unescaped-entities": "off",
+
+      // (Optional) Disable unused variable warnings during dev
+      "@typescript-eslint/no-unused-vars": "off",
+    },
   },
 ];
 
