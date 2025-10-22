@@ -1,7 +1,7 @@
-// app/contact.tsx
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Montserrat } from "next/font/google";
 import {
   FaUser,
@@ -14,7 +14,6 @@ import {
   FaGlobe,
   FaLock,
 } from "react-icons/fa";
-import { FaRegCheckSquare } from "react-icons/fa";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -42,7 +41,8 @@ export default function Advertise() {
     const { name, value, type } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+      [name]:
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 
@@ -65,107 +65,84 @@ export default function Advertise() {
   };
 
   return (
-    <div className={`min-h-screen bg-[#f2f4f0] text-gray-800 py-16 px-6 md:px-24 ${montserrat.className}`}>
+    <motion.div
+      className={`min-h-screen bg-[#f2f4f0] text-gray-800 py-16 px-6 md:px-24 ${montserrat.className}`}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       {/* Header */}
-      <h1 className="text-4xl font-bold text-gray-900 text-center mb-8">Advertise</h1>
+      <motion.h1
+        className="text-3xl md:text-4xl font-bold text-[#8aa921] text-center mb-8"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+      >
+        Advertise
+      </motion.h1>
 
       {/* Info Text */}
-      <div className="max-w-3xl mx-auto space-y-4 mb-12  text-center text-gray-700 text-lg leading-relaxed ">
+      <motion.div
+        className="max-w-3xl mx-auto space-y-4 mb-12 text-center text-gray-700 text-base md:text-lg leading-relaxed"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4, duration: 0.8 }}
+      >
         <p>
-          If you are interested in receiving newsletters and buying domains then please click here to chat with us on WhatsApp, or submit your details and check the 'Opt in' box on the form below and we will notify you via email of our upcoming sales.
+          If you are interested in receiving newsletters and buying domains then
+          please click here to chat with us on WhatsApp, or submit your details
+          and check the 'Opt in' box on the form below and we will notify you
+          via email of our upcoming sales.
         </p>
         <p>
-          If you are interested in Advertising/Banners and/or Affiliate deals, please complete this form.
+          If you are interested in Advertising/Banners and/or Affiliate deals,
+          please complete this form.
         </p>
         <p>
-          One of our Sales Representatives will call you within 5 business days to discuss your requirements.
+          One of our Sales Representatives will call you within 5 business days
+          to discuss your requirements.
         </p>
         <p className="text-[#8aa921] font-semibold hover:underline cursor-pointer">
           Click here to read our Terms and Conditions
         </p>
-      </div>
+      </motion.div>
 
       {/* Contact Form */}
-      <form
+      <motion.form
         onSubmit={handleSubmit}
-        className="bg-gray-50 p-8 rounded-2xl shadow-md border border-gray-200 max-w-5xl mx-auto"
+        className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-md border border-gray-200 max-w-5xl mx-auto"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
           {/* Left Column */}
           <div className="space-y-4">
-            <div className="relative">
-              <FaUser className="absolute top-3 left-3 text-gray-400" />
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Name"
-                className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-
-            <div className="relative">
-              <FaBuilding className="absolute top-3 left-3 text-gray-400" />
-              <input
-                type="text"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                placeholder="Company"
-                className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div className="relative">
-              <FaBriefcase className="absolute top-3 left-3 text-gray-400" />
-              <input
-                type="text"
-                name="position"
-                value={formData.position}
-                onChange={handleChange}
-                placeholder="Position"
-                className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div className="relative">
-              <FaMapMarkerAlt className="absolute top-3 left-3 text-gray-400" />
-              <input
-                type="text"
-                name="address"
-                value={formData.address}
-                onChange={handleChange}
-                placeholder="Address"
-                className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div className="relative">
-              <FaMapMarkerAlt className="absolute top-3 left-3 text-gray-400" />
-              <input
-                type="text"
-                name="postalCode"
-                value={formData.postalCode}
-                onChange={handleChange}
-                placeholder="Post/Zip Code"
-                className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div className="relative">
-              <FaGlobe className="absolute top-3 left-3 text-gray-400" />
-              <input
-                type="text"
-                name="website"
-                value={formData.website}
-                onChange={handleChange}
-                placeholder="Website"
-                className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
+            {[
+              { icon: FaUser, name: "name", placeholder: "Name", required: true },
+              { icon: FaBuilding, name: "company", placeholder: "Company" },
+              { icon: FaBriefcase, name: "position", placeholder: "Position" },
+              { icon: FaMapMarkerAlt, name: "address", placeholder: "Address" },
+              {
+                icon: FaMapMarkerAlt,
+                name: "postalCode",
+                placeholder: "Post/Zip Code",
+              },
+              { icon: FaGlobe, name: "website", placeholder: "Website" },
+            ].map(({ icon: Icon, name, placeholder, required }) => (
+              <div key={name} className="relative">
+                <Icon className="absolute top-3 left-3 text-gray-400" />
+                <input
+                  type="text"
+                  name={name}
+                  value={formData[name as keyof typeof formData] as string}
+                  onChange={handleChange}
+                  placeholder={placeholder}
+                  className="w-full pl-10 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required={required}
+                />
+              </div>
+            ))}
           </div>
 
           {/* Right Column */}
@@ -215,7 +192,7 @@ export default function Advertise() {
                 onChange={handleChange}
                 className="h-4 w-4"
               />
-              <label className="text-gray-700 font-medium">
+              <label className="text-gray-700 font-medium text-sm sm:text-base">
                 Opt in to Newsletters & Special Offer Emails
               </label>
             </div>
@@ -235,13 +212,15 @@ export default function Advertise() {
           </div>
         </div>
 
-        <button
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
           type="submit"
-          className="mt-6 w-full bg-blue-900 text-white font-semibold py-3 rounded-lg hover:bg-blue-800 transition"
+          className="mt-8 w-full bg-blue-900 text-white font-semibold py-3 rounded-lg hover:bg-blue-800 transition"
         >
           Submit
-        </button>
-      </form>
-    </div>
+        </motion.button>
+      </motion.form>
+    </motion.div>
   );
 }

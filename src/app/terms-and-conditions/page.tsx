@@ -19,14 +19,14 @@ export default function TermsAndConditions() {
 
                 {/* Section: Domain Registrations */}
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-blue-900 mb-3">DOMAIN REGISTRATIONS, RENEWALS AND TRANSFERS</h2>
+                    <h2 className="text-2xl font-semibold text-[#8aa921]     mb-3">DOMAIN REGISTRATIONS, RENEWALS AND TRANSFERS</h2>
 
-                    <h3 className="text-xl font-medium text-blue-900 mt-4 mb-2">Domain name registration</h3>
+                    <h3 className="text-xl font-medium text-[#8aa921] mt-4 mb-2">Domain name registration</h3>
                     <p className="text-gray-700 mb-2 leading-relaxed">
                         <strong>Overview:</strong> This Domain Name Registration Agreement (this "Agreement") is entered into by and between Websitebrokers Ltd and you, and is made effective as of the date of electronic acceptance. This Agreement sets forth the terms and conditions of your use of Websitebrokers Ltd Domain Name Registration services (the "Domain Name Registration Services" or the "Services"). The terms "we", "us" or "our" shall refer to Websitebrokers Ltd. The terms "you", "your", "User" or "customer" shall refer to any individual or entity who accepts this Agreement. Unless otherwise specified, nothing in this Agreement shall be deemed to confer any third-party rights or benefits. Your electronic acceptance of this Agreement signifies that you have read, understand, acknowledge and agree to be bound by this Agreement.
                     </p>
 
-                    <h3 className="text-xl font-medium text-blue-900 mt-4 mb-2">Fees and Payments</h3>
+                    <h3 className="text-xl font-medium text-[#8aa921] mt-4 mb-2">Fees and Payments</h3>
                     <ul className="list-disc list-inside text-gray-700 mb-2 leading-relaxed space-y-1">
                         <li>Registration fees for .co.uk domain names: £12.99 per year</li>
                         <li>Registration fees for .uk domain names: £9.99 per year</li>
@@ -36,7 +36,7 @@ export default function TermsAndConditions() {
                         You agree to pay any and all prices and fees due for Services purchased or obtained at this Site at the time you order the Services. Websitebrokers Ltd expressly reserves the right to change or modify its prices and fees at any time, and such changes or modifications shall be posted online at this Site and effective immediately without need for further notice to you. If you have purchased or obtained Services for a period of months or years, changes or modifications in prices and fees shall be effective when the Services in question come up for renewal as further described below.
                         * Renewal price subject to change prior to actual date of renewal.          </p>
 
-                    <h3 className="text-xl font-medium text-blue-900 mt-4 mb-2">Charges and Payment Duration and Renewal</h3>
+                    <h3 className="text-xl font-medium text-[#8aa921] mt-4 mb-2">Charges and Payment Duration and Renewal</h3>
                     <p className="text-gray-700 mb-2 leading-relaxed">
                         It is your sole responsibility to ensure that all of your registered Domain Names are renewed prior to their expiration dates. Once the Domain Name expires, all associated services will be deactivated and it will be removed from your account. You can still contact us to confirm after this point whether the domain name is available to renew. You accept and recognise that once a Domain Name expires, you lose all rights on it.
                     </p>
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
 
                 {/* Section: Renewal Terms */}
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-blue-900 mb-3">DOMAIN NAME RENEWAL TERMS</h2>
+                    <h2 className="text-2xl font-semibold text-[#8aa921] mb-3">DOMAIN NAME RENEWAL TERMS</h2>
                     <p className="text-gray-700 mb-2 leading-relaxed">
                         When you register a domain name, you will have the following renewal options:
                     </p>
@@ -84,7 +84,7 @@ export default function TermsAndConditions() {
 
                 {/* Section: Transfers */}
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-blue-900 mb-3">DOMAIN TRANSFERS</h2>
+                    <h2 className="text-2xl font-semibold text-[#8aa921] mb-3">DOMAIN TRANSFERS</h2>
                     <p className="text-gray-700 mb-2 leading-relaxed">
                         On receipt of a transfer-out request, we will use our reasonable endeavours to process...
                     </p>
@@ -92,12 +92,12 @@ export default function TermsAndConditions() {
 
                 {/* Section: Reporting Abuse & Legal Info */}
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-blue-900 mb-3">Reporting of Abuse</h2>
+                    <h2 className="text-2xl font-semibold text-[#8aa921] mb-3">Reporting of Abuse</h2>
                     <p className="text-gray-700 mb-2 leading-relaxed">
                         To report abuse or make a complaint, please use the form on the Contact Us page...
                     </p>
 
-                    <h2 className="text-2xl font-semibold text-blue-900 mb-3 mt-4">Legal Information</h2>
+                    <h2 className="text-2xl font-semibold text-[#8aa921] mb-3 mt-4">Legal Information</h2>
                     <p className="text-gray-700 mb-2 leading-relaxed">
                         Please note all information supplied on this website is done with good faith...
                     </p>

@@ -167,13 +167,13 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-4 pt-6">
                   <Link
-                    href="/about"
+                    href="/what-we-do"
                     className="bg-[#8aa921] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a981d] transition-all shadow-md hover:shadow-lg"
                   >
                     Know More
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/contact-us"
                     className="border-2 border-[#8aa921] text-[#8aa921] px-6 py-3 rounded-full font-semibold hover:bg-[#8aa921] hover:text-white transition-all shadow-md hover:shadow-lg"
                   >
                     Get In Touch
@@ -219,7 +219,7 @@ export default function Home() {
           Talk to us today and discover how Websitebrokers can help your business grow.
         </p>
         <a
-          href="/contact"
+          href="/contact-us"
           className="bg-[#8aa921] text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-[#7a981d] transition"
         >
           Contact Our Experts

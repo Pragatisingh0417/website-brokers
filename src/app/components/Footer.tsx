@@ -26,7 +26,7 @@ export function Footer() {
               As early adopters of the Internet as a highly tactical and targeted marketing tool, we have set out to help businesses achieve and surpass their earning potential, with technical know-how, excellent design, and perfect functionality.
             </p>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="bg-[#b9d542] text-black px-6 py-3 rounded-full hover:bg-[#b9d542] transition w-max"
             >
               Get in Touch
@@ -40,8 +40,8 @@ export function Footer() {
             <Link href="/what-we-do" className="hover:text-red-700 transition">What We Do</Link>
             <Link href="/our-network" className="hover:text-red-700 transition">Our Network</Link>
             <Link href="/advertise" className="hover:text-red-700 transition">Advertise</Link>
-            <Link href="/terms" className="hover:text-red-700 transition">Terms & Conditions</Link>
-            <Link href="/contact" className="hover:text-red-700 transition">Contact Us</Link>
+            <Link href="/terms-and-conditions" className="hover:text-red-700 transition">Terms & Conditions</Link>
+            <Link href="/contact-us" className="hover:text-red-700 transition">Contact Us</Link>
           </div>
 
           
@@ -59,7 +59,7 @@ export function Footer() {
               <Link href="#" className="p-3 bg-[#b9d542] rounded-full hover:bg-red-700 transition">
                 <FaLinkedinIn size={16} />
               </Link>
-              <Link href="#" className="p-3 bg-[#b9d542] rounded-full hover:bg-red-700 transition">
+              <Link href="" className="p-3 bg-[#b9d542] rounded-full hover:bg-red-700 transition">
                 <FaInstagram size={16} />
               </Link>
             </div>
