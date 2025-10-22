@@ -67,7 +67,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
                     {/* Left Side - Info */}
                     <div className="space-y-6">
-                        <h2 className="text-3xl font-semibold text-gray-900 mb-4">Get In Touch</h2>
+                        <h2 className="text-3xl font-semibold text-[#8aa921] mb-4"> Get In Touch</h2>
                         <p className="text-gray-600 leading-relaxed">
                             Fill out the form or reach us directly through the following contact details. We
                             typically respond within 24–48 hours.
@@ -136,7 +136,7 @@ export default function Contact() {
                     </div>
                     {/* left Side - Form */}
                     <div className="bg-gray-50 shadow-md rounded-2xl p-8 border border-gray-200">
-                        <h3 className="text-2xl font-semibold text-blue-900 mb-6">Send Us a Message</h3>
+                        <h3 className="text-2xl font-semibold text-[#8aa921] mb-6">Send Us a Message</h3>
 
                         <form onSubmit={handleSubmit} className="space-y-5">
                             <div>

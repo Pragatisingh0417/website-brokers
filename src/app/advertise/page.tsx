@@ -70,7 +70,7 @@ export default function Advertise() {
       <h1 className="text-4xl font-bold text-gray-900 text-center mb-8">Advertise</h1>
 
       {/* Info Text */}
-      <div className="max-w-3xl mx-auto space-y-4 mb-12  text-center text-gray-700 text-lg leading-relaxed">
+      <div className="max-w-3xl mx-auto space-y-4 mb-12  text-center text-gray-700 text-lg leading-relaxed ">
         <p>
           If you are interested in receiving newsletters and buying domains then please click here to chat with us on WhatsApp, or submit your details and check the 'Opt in' box on the form below and we will notify you via email of our upcoming sales.
         </p>
@@ -80,7 +80,7 @@ export default function Advertise() {
         <p>
           One of our Sales Representatives will call you within 5 business days to discuss your requirements.
         </p>
-        <p className="text-blue-900 font-semibold hover:underline cursor-pointer">
+        <p className="text-[#8aa921] font-semibold hover:underline cursor-pointer">
           Click here to read our Terms and Conditions
         </p>
       </div>

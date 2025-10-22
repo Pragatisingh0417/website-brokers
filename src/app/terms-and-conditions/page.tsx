@@ -7,7 +7,7 @@ export default function TermsAndConditions() {
         <main className="bg-gray-50 min-h-screen py-12 px-6 md:px-20">
             <div className="max-w-5xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
 
-                <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                <h1 className="text-3xl md:text-4xl font-bold text-[#8aa921] mb-6">
                     Terms and Conditions
                 </h1>
 
