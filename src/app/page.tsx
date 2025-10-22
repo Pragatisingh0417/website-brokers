@@ -32,16 +32,15 @@ export default function Home() {
           With age comes experience, and having been a major player in the online marketing world since the earliest days of the Internet in the nineties, here at Websitebrokers we have the knowledge and ability to make your online presence felt!
         </p>
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
-          As early adopters of the Internet as a highly tactical and targeted marketing tool, we’ve helped businesses achieve and surpass their potential with technical know-how, excellent design, and perfect functionality.
+          As early adopters of the Internet as a highly tactical and targeted marketing tool, we&apos;ve helped businesses achieve and surpass their potential with technical know-how, excellent design, and perfect functionality.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed">
-          As a small to medium enterprise, you may not have the large advertising budgets of leading brands — but at Websitebrokers, that’s no obstacle to creating a bespoke, high-impact global presence.
+          As a small to medium enterprise, you may not have the large advertising budgets of leading brands — but at Websitebrokers, that&apos;s no obstacle to creating a bespoke, high-impact global presence.
         </p>
       </motion.section>
 
       {/* WHY CHOOSE US */}
       <motion.section
-        className=""
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -52,23 +51,28 @@ export default function Home() {
             Why Choose <span className="text-[#8aa921]"> Websitebrokers </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[{
-              icon: <FaRocket className="text-[#8aa921] text-4xl mx-auto mb-4" />,
-              title: "Proven Expertise",
-              desc: "Decades of experience in online marketing, design, and SEO success."
-            }, {
-              icon: <FaChartLine className="text-[#8aa921] text-4xl mx-auto mb-4" />,
-              title: "Data-Driven Results",
-              desc: "We help your website achieve first-page rankings and maximize visibility."
-            }, {
-              icon: <FaUsers className="text-[#8aa921] text-4xl mx-auto mb-4" />,
-              title: "SME Friendly",
-              desc: "Affordable, customized marketing solutions designed for small and medium enterprises."
-            }, {
-              icon: <FaGlobe className="text-[#8aa921] text-4xl mx-auto mb-4" />,
-              title: "Global Reach",
-              desc: "Our affiliate network across industries boosts your brand worldwide."
-            }].map((item, idx) => (
+            {[
+              {
+                icon: <FaRocket className="text-[#8aa921] text-4xl mx-auto mb-4" />,
+                title: "Proven Expertise",
+                desc: "Decades of experience in online marketing, design, and SEO success.",
+              },
+              {
+                icon: <FaChartLine className="text-[#8aa921] text-4xl mx-auto mb-4" />,
+                title: "Data-Driven Results",
+                desc: "We help your website achieve first-page rankings and maximize visibility.",
+              },
+              {
+                icon: <FaUsers className="text-[#8aa921] text-4xl mx-auto mb-4" />,
+                title: "SME Friendly",
+                desc: "Affordable, customized marketing solutions designed for small and medium enterprises.",
+              },
+              {
+                icon: <FaGlobe className="text-[#8aa921] text-4xl mx-auto mb-4" />,
+                title: "Global Reach",
+                desc: "Our affiliate network across industries boosts your brand worldwide.",
+              },
+            ].map((item, idx) => (
               <motion.div
                 key={idx}
                 className="bg-white p-6 rounded-2xl shadow-md"
@@ -88,26 +92,34 @@ export default function Home() {
       {/* BUSINESS GROWTH INSIGHT SECTIONS */}
       {[
         {
-          title: <>The Importance of Your <span className="text-[#8aa921]">Online Presence</span> </>,
+          title: (
+            <>
+              The Importance of Your{" "}
+              <span className="text-[#8aa921]">Online Presence</span>
+            </>
+          ),
           text: "Recent marketing research has shown that any business not yet on the web can be losing an annual percentage of earnings and growth rate, which can mean the difference between business success and business failure.",
           text2: "Ensure that your business is being given every opportunity to flourish in a crowded marketplace with first-page ranking on any search engine. This is the difference that a custom website and targeted advertising from Websitebrokers can make to you — right now!",
           img: "/images/home-1.jpg",
           reverse: false,
         },
         {
-          title: <>Your Gateway to <span className="text-[#8aa921]">Profitable Online </span>  Advertising</>,
-
-          text: "Our affiliated sites in alternative medicine, travel, hotels, holidays, events, gambling, speculation, entertainment and many more sectors can bring you the 'click-through' banner advertising you need to make your website not only more efficient, but more profitable too.",
+          title: (
+            <>
+              Your Gateway to{" "}
+              <span className="text-[#8aa921]">Profitable Online </span> Advertising
+            </>
+          ),
+          text: "Our affiliated sites in alternative medicine, travel, hotels, holidays, events, gambling, speculation, entertainment and many more sectors can bring you the &apos;click-through&apos; banner advertising you need to make your website not only more efficient, but more profitable too.",
           text2: "Year on year sales figures have shown that a website from Websitebrokers with linked banner advertising can give you exponential growth which can far outstrip your competitors, and increase your profit margin. Websitebrokers can make to you — right now!",
           img: "/images/home-2.jpg",
           reverse: true,
         },
       ].map((section, idx) => {
-        // Variants for sliding in from left/right
         const slideVariant = {
           hidden: (reverse: boolean) => ({
             opacity: 0,
-            x: reverse ? 100 : -100, // slide from right if reverse, left if not
+            x: reverse ? 100 : -100,
           }),
           visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
         };
@@ -117,7 +129,9 @@ export default function Home() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
               {/* IMAGE */}
               <motion.div
-                className={`${section.reverse ? "md:order-2" : "md:order-1"} flex justify-center`}
+                className={`${
+                  section.reverse ? "md:order-2" : "md:order-1"
+                } flex justify-center`}
                 custom={section.reverse}
                 initial="hidden"
                 whileInView="visible"
@@ -133,16 +147,24 @@ export default function Home() {
 
               {/* CONTENT */}
               <motion.div
-                className={`${section.reverse ? "md:order-1" : "md:order-2"}`}
+                className={`${
+                  section.reverse ? "md:order-1" : "md:order-2"
+                }`}
                 custom={section.reverse}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={slideVariant}
               >
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{section.title}</h2>
-                <p className="text-gray-700 text-lg leading-relaxed mb-6">{section.text}</p>
-                <p className="text-gray-700 text-lg leading-relaxed">{section.text2}</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  {section.title}
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  {section.text}
+                </p>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  {section.text2}
+                </p>
                 <div className="flex flex-wrap gap-4 pt-6">
                   <Link
                     href="/about"
@@ -163,7 +185,6 @@ export default function Home() {
         );
       })}
 
-
       {/* INTRO SECTION */}
       <motion.section
         className="max-w-7xl mx-auto px-6 md:px-12 py-16 text-center"
@@ -173,17 +194,16 @@ export default function Home() {
         variants={fadeUp}
       >
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-          Your <span className="text-[#8aa921]">Goals. </span>  Our <span className="text-[#8aa921]">Expertise.</span>
+          Your <span className="text-[#8aa921]">Goals. </span> Our{" "}
+          <span className="text-[#8aa921]">Expertise.</span>
         </h1>
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
-          The basic formula for the success of your business is within your grasp. To get a clear idea of exactly how we can help you achieve your business goals today simply talk to us. We can take care of all the little exhausting details, so you don’t need to worry about anything. Our extensive portfolio of domains, mainly with .com and .co.uk addresses, are at your disposal, plus our network of affiliated websites which can promote your banner advertising to great effect.
+          The basic formula for the success of your business is within your grasp. To get a clear idea of exactly how we can help you achieve your business goals today simply talk to us. We can take care of all the little exhausting details, so you don&apos;t need to worry about anything. Our extensive portfolio of domains, mainly with .com and .co.uk addresses, are at your disposal, plus our network of affiliated websites which can promote your banner advertising to great effect.
         </p>
-
       </motion.section>
-      {/* CARD SECTION */}
-     {/* CARD SECTION */}
 
- <CardSection />
+      {/* CARD SECTION */}
+      <CardSection />
 
       {/* FINAL CTA */}
       <motion.section
@@ -193,7 +213,7 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Let’s Build Your Digital Success Story
+          Let&apos;s Build Your Digital Success Story
         </h2>
         <p className="text-lg mb-8">
           Talk to us today and discover how Websitebrokers can help your business grow.
