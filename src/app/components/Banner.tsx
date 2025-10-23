@@ -8,10 +8,10 @@ export default function Banner() {
   return (
     <section className="relative text-white text-center">
       {/* Background image */}
-      <div className="absolute inset-0 bg-[url('/banner/banner-3.jpg')] bg-cover bg-center bg-no-repeat"></div>
+      <div className="absolute inset-0 bg-[url('/banner/banner-6.webp')] bg-cover bg-center bg-no-repeat"></div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[60vh] py-20 px-4 md:py-40 md:px-20">
