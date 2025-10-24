@@ -21,7 +21,7 @@ export function Header() {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 font-montserrat text-base">
-      <div className="container mx-auto flex items-center justify-between py-3 px-4 sm:px-6 md:px-12">
+      <div className="container mx-auto flex items-center justify-between py-3 px-4 sm:px-6 md:px-25">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
@@ -112,7 +112,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={handleLinkClick}
-                  className="text-gray-800 hover:text-[#a1b643] font-medium transition text-base"
+                  className="text-gray-800 hover:text-[#8aa921] font-medium transition text-base"
                 >
                   {link.label}
                 </Link>
@@ -120,7 +120,7 @@ export function Header() {
               <Link
                 href="/contact-us"
                 onClick={handleLinkClick}
-                className="bg-[#b9d542] text-white px-4 py-2 rounded-full hover:bg-[#a1b643] transition mt-2 text-base text-center"
+                className="bg-[#8aa921] text-white px-4 py-2 rounded-full hover:bg-[#8aa921] transition mt-2 text-base text-center"
               >
                 Get in touch
               </Link>
