@@ -17,8 +17,8 @@ export default function Network() {
     <div className={`min-h-screen bg-[#f2f4f0] text-gray-800 ${montserrat.className}`}>
 
       {/* HERO SECTION */}
-      <section className="relative h-[35vh] sm:h-[45vh] md:h-[50vh] flex items-center justify-center text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/banner/banner-1.jpg')] bg-cover bg-center brightness-[0.45]" />
+      <section className="relative h-[35vh] sm:h-[45vh] md:h-[60vh] flex items-center justify-center text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/banner/networks.png')] bg-cover bg-center brightness-[0.45]" />
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

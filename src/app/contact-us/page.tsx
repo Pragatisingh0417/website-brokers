@@ -38,8 +38,8 @@ export default function Contact() {
     <div className={`min-h-screen bg-[#f2f4f0] text-gray-800 ${montserrat.className}`}>
 
       {/* HERO SECTION */}
-      <section className="relative h-[35vh] sm:h-[45vh] md:h-[50vh] flex items-center justify-center text-white">
-        <div className="absolute inset-0 bg-[url('/banner/banner-1.jpg')] bg-cover bg-center brightness-[0.45]" />
+      <section className="relative h-[35vh] sm:h-[45vh] md:h-[60vh] flex items-center justify-center text-white">
+        <div className="absolute inset-0 bg-[url('/banner/contactus.png')] bg-cover bg-center brightness-[0.45]" />
         <div className="relative z-10 text-center px-4 sm:px-6 md:px-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-3">Contact Us</h1>
           <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">

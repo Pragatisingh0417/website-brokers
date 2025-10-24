@@ -23,8 +23,8 @@ export default function WhatWeDo() {
       
       {/* HERO SECTION */}
     {/* HERO SECTION */}
-      <section className="relative h-[40vh] sm:h-[45vh] flex items-center justify-center text-white">
-        <div className="absolute inset-0 bg-[url('/banner/banner-1.jpg')] bg-cover bg-center brightness-[0.45]" />
+      <section className="relative h-[40vh] sm:h-[45vh] md:h-[60vh] flex items-center justify-center text-white">
+        <div className="absolute inset-0 bg-[url('/banner/what-we-do.png')] bg-cover bg-center brightness-[0.45]" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

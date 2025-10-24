@@ -16,25 +16,24 @@ export function Header() {
     { href: "/contact-us", label: "Contact Us" },
   ];
 
-  // Close mobile menu when clicking a link
   const handleLinkClick = () => setIsOpen(false);
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 font-montserrat text-base">
-      <div className="container mx-auto flex items-center justify-between py-3 px-4 sm:px-6 md:px-25">
+      <div className="container mx-auto flex items-center justify-between py-3 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
             <img
               src="/logo/websitebrokers logo.png"
               alt="Logo"
-              className="h-12 sm:h-14 md:h-16 w-auto"
+              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
             />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6 items-center">
+        <nav className="hidden md:flex gap-6 items-center text-sm sm:text-base lg:text-base">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -95,7 +94,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation with animation */}
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -104,7 +103,7 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white/95 backdrop-blur-md px-4 py-4 shadow-lg w-full overflow-hidden"
+            className="md:hidden bg-white/95 backdrop-blur-md px-4 py-4 shadow-lg w-full overflow-auto"
           >
             <nav className="flex flex-col gap-3">
               {links.map((link) => (
@@ -120,7 +119,7 @@ export function Header() {
               <Link
                 href="/contact-us"
                 onClick={handleLinkClick}
-                className="bg-[#8aa921] text-white px-4 py-2 rounded-full hover:bg-[#8aa921] transition mt-2 text-base text-center"
+                className="bg-[#8aa921] text-white px-4 py-2 rounded-full hover:bg-[#7a9820] transition mt-2 text-base text-center"
               >
                 Get in touch
               </Link>
